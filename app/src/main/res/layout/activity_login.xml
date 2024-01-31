@@ -48,22 +48,35 @@
         android:layout_below="@+id/edit_password"
         android:text="Log In"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/btn_background"
         android:textColor="@color/white"
         android:textSize="20sp"
         />
 
-    <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="150dp"
+    <LinearLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_below="@+id/btnLogin"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
-        android:background="@color/white"
-        android:text="Sign Up"
-        android:textColor="@color/blue"
-        android:textSize="20sp" />
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/dont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Don't have an account ?"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/btnSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=" Sign up"
+            android:textSize="16sp"
+            android:textColor="@color/blue"/>
+
+    </LinearLayout>
 
 </RelativeLayout>
